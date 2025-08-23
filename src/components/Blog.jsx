@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import "./Blog.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/autoplay";
 
 const blogs = [
   {
@@ -70,39 +66,62 @@ function Blog() {
         Stay inspired and keep learning with our latest posts.
       </p>
 
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={20}
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
+      {/* ✅ Featured Post Section */}
+      {/* ✅ Featured Posts Section */}
+<div className="featured-post">
+  <h3>🌟 Featured Posts</h3>
+  <div className="featured-grid">
+    {blogs.slice(0, 3).map((blog) => (
+      <div key={blog.id} className="featured-card">
+        <img src={blog.img} alt={blog.title} />
+        <h4>{blog.title}</h4>
+        <p>{blog.text}</p>
+        <button onClick={() => setShowPage(true)}>Read Featured →</button>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+      {/* ✅ Categories Section */}
+      <div className="categories">
+        <h3>📂 Categories</h3>
+        <ul>
+          <li>🎨 Design</li>
+          <li>📈 Trends</li>
+          <li>📘 Tutorial</li>
+          <li>💡 Inspiration</li>
+        </ul>
+      </div>
+
+      {/* ✅ Blog Grid */}
+      <div className="blog-grid">
         {blogs.map((blog) => (
-          <SwiperSlide key={blog.id}>
-            <div className="blog-card">
-              <img src={blog.img} alt={blog.title} />
-              <div className="blog-meta">
-                <span className="blog-category">{blog.category}</span>
-                <span className="blog-readtime">{blog.readTime}</span>
-              </div>
-              <h3>{blog.title}</h3>
-              <p>{blog.text}</p>
-              <span className="blog-date">{blog.date}</span>
-              <button className="read-more" onClick={() => setShowPage(true)}>
-                Read More
-              </button>
+          <div key={blog.id} className="blog-card">
+            <img src={blog.img} alt={blog.title} />
+            <div className="blog-meta">
+              <span className="blog-category">{blog.category}</span>
+              <span className="blog-readtime">{blog.readTime}</span>
             </div>
-          </SwiperSlide>
+            <h3>{blog.title}</h3>
+            <p>{blog.text}</p>
+            <span className="blog-date">{blog.date}</span>
+            <button className="read-more" onClick={() => setShowPage(true)}>
+              Read More
+            </button>
+          </div>
         ))}
-      </Swiper>
+      </div>
+
+      {/* ✅ Newsletter Section */}
+      <div className="newsletter">
+        <h3>📩 Subscribe to Our Newsletter</h3>
+        <p>Stay updated with the latest blogs, tutorials & design inspiration.</p>
+        <form>
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
 
       <div className="view-all-container">
         <button className="view-all-btn" onClick={() => setShowPage(true)}>
