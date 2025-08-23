@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -46,6 +47,13 @@ function Login() {
           </div>
 
           <button type="submit" className="login-btn">Login</button>
+
+           <p>
+          Don’t have an account?{" "}
+          <Link to="/signup" className="signup-link">
+            Sign Up
+          </Link>
+        </p>
         </form>
       </div>
     </div>

@@ -1,0 +1,309 @@
+body {
+  background-color: #E6D4CB;
+  font-family: Arial, sans-serif;
+}
+
+/* Blog Header */
+.blog-header {
+  text-align: center;
+  margin: 40px 0;
+  /* padding-bottom: 50px; */
+}
+
+.blog-header h1 {
+  font-size: 80px; /* reduced from 150px for better alignment */
+  margin: 0;
+}
+
+.blog-title {
+  font-size: 60px; /* reduced from 500px */
+  font-weight: bolder;
+  color: #141313;
+  font-family: "Brush Script MT", cursive;
+  padding-top: 90px;
+}
+
+.blog-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* Blog Categories */
+.blog-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.blog-categories button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #8a7878;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Cards Section */
+.cards-section {
+  padding: 40px 5%;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-info1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  font-weight: 600;
+  background-color: #f3eaed;
+}
+
+.team-badge {
+  background: #e5e5e5;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Blog Info Section */
+.blog-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 5%;
+  background: #E6D4CB;
+}
+
+.blog-widget {
+  flex: 1 1 300px; /* responsive width */
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.blog-widget h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.blog-widget.about img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.blog-widget.about p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: #666;
+}
+
+.posts .post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.posts .post img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.posts .post p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.posts .post span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.features-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.features-section .highlight {
+  color: #EA4C89;
+}
+
+.features-section .subtitle {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Ye ensure karega sab cards same height me hain */
+
+  
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  text-align: center; 
+  padding: 20px;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 80px;             
+  margin-bottom: 15px;      
+}
+
+.icon-box img {
+  max-width: 60px;  
+  height: auto;
+}
+
+
+/* Social Section */
+.social {
+  text-align: center;
+  border-radius: 12px;
+  max-width: 1380px;
+  margin: 40px auto;
+}
+
+.social h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.social p {
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.social .highlight {
+  color: #EA4C89;
+}
+
+.social-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-image {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  padding-left: 90px;
+  padding-right: 90px;
+  border-radius: 10%;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+  margin: 50px 0;
+  border-radius: 15px;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.cta-section .highlight {
+  color: #EA4C89;
+}
+
+.cta-btn {
+  
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #EA4C89;
+}
+
+.cta-btn:hover {
+  background: #141212;
+  transform: scale(1.05);
+}

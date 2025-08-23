@@ -1,0 +1,115 @@
+/* ============================= */
+/* 🌟 Main Showcase Container    */
+/* ============================= */
+.animation-showcase-container {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: #E6D4CB;
+}
+
+/* ============================= */
+/* 🎬 Hero Section               */
+/* ============================= */
+.animation-hero h1{
+  font-family: "Brush Script MT", cursive;
+  padding-top: 40px;
+}
+.animation-hero {
+  text-align: center;  
+  color: rgb(16, 15, 15);
+  border-radius: 12px;
+  margin: 0 auto  auto;
+  max-width: 1000px;
+  
+}
+
+.animation-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.animation-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color:grey;
+}
+
+/* ============================= */
+/* 📝 Section Wrapper            */
+/* ============================= */
+.animation-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.animation-heading {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* 🃏 Cards Grid                 */
+/* ============================= */
+.animation-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================= */
+/* 🎴 Card Styles                */
+/* ============================= */
+.animation-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.animation-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.animation-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #eee;
+}
+
+.animation-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.animation-card p {
+  font-size: 1rem;
+  padding: 0 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* 📱 Responsive Adjustments     */
+/* ============================= */
+@media (max-width: 768px) {
+  .animation-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .animation-hero p {
+    font-size: 1rem;
+  }
+
+  .animation-heading {
+    font-size: 1.8rem;
+  }
+}

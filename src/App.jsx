@@ -1,71 +1,94 @@
 import React from "react";
-import './App.css'
-import {  createBrowserRouter,  RouterProvider,} from "react-router-dom";
-import Hero from "./components/Hero";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Login from "./components/Login";
 import Footer from "./components/Footer";
-import SignUp from "./components/SignUp";
 import Blog from "./components/Blog";
+import Hero from "./components/Hero";
+import AnimatedShowcase from "./components/AnimatedShowcase";
+import Branding from "./components/Branding";
+import Webdesign from "./components/Webdesign";
+import ProductDesign from "./components/ProductDesign";
+
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:
-    <div>
-      <Navbar/>
-      <Hero/>
-      <Footer/>
-      
-    </div>
+    element: (
+      <div>
+        <Navbar />
+        <Hero />
+        <Footer />
+      </div>
+    ),
   },
   {
-    path: "about",
-    element:
-    <div>
-      <Navbar/>
-      <About/>
-      <Footer/>
-    </div>
+    path: "/animation",
+    element: (
+      <div>
+        <Navbar />
+        <AnimatedShowcase/>
+        <Footer />
+      </div>
+    ),
+  },
+   {
+    path: "/branding",
+    element: (
+      <div>
+        <Navbar />
+        <Branding/>
+        
+        <Footer />
+      </div>
+    ),
   },
   {
-    path: "blog",
-    element:
-    <div>
-      <Navbar/>
-       <Blog/>
-       <Footer/>
-    </div>
+    path: "/webdesign",
+    element: (
+      <div>
+        <Navbar />
+        <Webdesign/>
+        <Footer />
+      </div>
+    ),
+  },
+   {
+    path: "/productdesign",
+    element: (
+      <div>
+        <Navbar />
+        <ProductDesign/>
+        <Footer />
+      </div>
+    ),
+   },
+  {
+    path: "/about",
+    element: (
+      <div>
+        <Navbar />
+        <About />
+        <Footer />
+      </div>
+    ),
   },
   {
-    path: "login",
-    element:
-    <div>
-      <Navbar/>
-       <Login/>
-    </div>
+    path: "/blog",
+    element: (
+      <div>
+        <Navbar />
+        <Blog />
+        <Footer />
+      </div>
+    ),
   },
- 
-  {
-    path: "signup",
-    element:
-    <div>
-      <Navbar/>
-       <SignUp/>
-    </div>
-  },
- 
-])
-
+]);
 
 function App() {
-  return (
-    <>
-     <RouterProvider router={router} />
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
 export default App;
