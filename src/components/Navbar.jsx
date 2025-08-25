@@ -2,9 +2,9 @@
 import React from "react";
 
 import "./Navbar.css";
-import { useState } from "react";
+import { useState } from "react";                            
 import { Link } from "react-router-dom";
-import Web from "./web";
+import Web from "./Web";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
