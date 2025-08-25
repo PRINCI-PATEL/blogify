@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Web.css"
-import "./login.css"
+import "./Login.css"
 
 const Web= ({ isOpen, setIsOpen }) => {
   const [isLogin, setIsLogin] = useState(true);
